@@ -1,0 +1,40 @@
+include ../../ui/window-popup/window-popup
+include ../../ui/input/input
+include ../../ui/checkbox/checkbox
+include ../../ui/button/button
+include ../../ui/popup-message/popup-message
+
+mixin SubscribePopup(data)
+    +WindowPopup#subscribePopup.subscribe-popup
+        .subscribe-popup__fill
+        .subscribe-popup__scene
+            #subscribeScene.subscribe-popup__parallax
+                .subscribe-popup__parallax-item(data-depth="0.6")
+        .container
+            .subscribe-popup__content
+                .subscribe-popup__left
+                    h1.subscribe-popup__title=data.title
+                    p.subscribe-popup__text=data.text
+                    ul.subscribe-popup__features
+                        each item in data.features
+                            li.subscribe-popup__features-item
+                                +icon(item.icon, 30, 30)
+                                p=item.text
+                form.subscribe-popup__form.js-subscribe-form(method="POST")
+                    .form-group.subscribe-popup__input
+                        +Input({ type: "text", placeholder: 'Ваше имя <span>*</span>' }).js-input
+                    .form-group.subscribe-popup__input
+                        +Input({ type: "text", placeholder: 'Номер телефона <span>*</span>' }).js-input.js-input-phone
+                    +Checkbox({
+                        id: 'agree',
+                        name: 'subscribe_agree',
+                        checked: true
+                    }, false).subscribe-popup__agree
+                        | Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с #[a(href="#") Политикой конфиденциальности].
+                    +Button({type: "submit", color: "primary", text: "Получить"}).subscribe-popup__submit-btn
+    +PopupMessage({text: "Ваше сообщение отправлено!"}).js-subscribe-popup-success
+
+
+
+
+

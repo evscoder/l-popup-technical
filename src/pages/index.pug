@@ -1,0 +1,17 @@
+extends templates/template
+append components
+    -
+        page = {
+            id: 'home',
+            title: '',
+            attrs: {},
+            content: {}
+        }
+
+    include ../components/layout/button-popup/button-popup
+    include ../components/layout/subscribe-popup/subscribe-popup
+
+block content
+    +ButtonPopup
+    +SubscribePopup(subscribePopup)
+

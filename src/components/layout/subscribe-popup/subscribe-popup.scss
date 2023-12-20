@@ -1,0 +1,132 @@
+.subscribe-popup {
+    color: #fff;
+
+    &__fill {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        z-index: 1;
+        width: 73px;
+        height: 73px;
+        border-radius: 100%;
+        background-image: linear-gradient(225deg, #0C5EED -52.44%, #292B33 94.43%);
+        pointer-events: none;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: transform 0.75s ease-in-out;
+
+        .is-animate & {
+            transform: scale(70);
+
+            @include media('>1920px') {
+                transform: scale(100);
+            }
+        }
+    }
+
+    &__scene {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        transition: 200ms ease-in-out 0s;
+        transform: scale(1.3);
+
+        .is-animate & {
+            opacity: 1;
+            transition: 200ms ease-in-out 1s;
+            pointer-events: all;
+            transform: scale(1);
+        }
+    }
+
+    &__parallax {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__parallax-item {
+        height: 100%;
+        width: 100%;
+        background: url('__static__content/Shapes.png') no-repeat 50% 100% / contain;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 0.6fr;
+        gap: 48px;
+        opacity: 0;
+        pointer-events: none;
+        transition: 200ms ease-in-out 0s;
+
+        .is-animate & {
+            opacity: 1;
+            transition: 200ms ease-in-out 0.5s;
+            pointer-events: all;
+        }
+
+        @include media ('<sm-tablet') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+        padding-top: 20px;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+
+        @include media ('<sm-tablet') {
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 54px;
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @include media('<sm') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__features-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px 30px;
+        align-items: center;
+
+        [class*=icon] {
+            fill: none;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__submit-btn {
+        max-width: 300px;
+        width: 100%;
+
+        @include media ('<sm-tablet') {
+            max-width: 100%;
+        }
+    }
+}

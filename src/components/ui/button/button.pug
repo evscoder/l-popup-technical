@@ -1,0 +1,5 @@
+mixin Button(data)
+    button&attributes(attributes).button(
+        class=`button--${color}`
+        type=(data.type)
+    )=data.text

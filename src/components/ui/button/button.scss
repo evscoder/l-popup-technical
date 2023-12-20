@@ -1,0 +1,18 @@
+.button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 17px 40px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+
+    &:active {
+        background-color: var(--primary-color-active);
+    }
+}

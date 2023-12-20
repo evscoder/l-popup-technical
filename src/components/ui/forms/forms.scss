@@ -1,0 +1,58 @@
+%input {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+}
+
+%input-placeholder {
+    font-weight: 400;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+input {
+    &[type="text"] {
+        -webkit-appearance: none;
+    }
+
+    &[type="search"] {
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+}
+
+.input {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+}
+
+textarea {
+    resize: none;
+
+    &.input {
+        height: auto;
+    }
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.input-helper {
+    .error & {
+        color: var(--danger-color);
+    }
+}

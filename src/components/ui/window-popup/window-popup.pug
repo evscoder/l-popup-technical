@@ -1,0 +1,7 @@
+mixin WindowPopup(data = {})
+    .window-popup.modal&attributes(attributes)
+        .window-popup__dialog
+            button.window-popup__dismiss(data-dismiss="modal")
+                +icon('icon-close', 24)
+            .window-popup__content
+                block

@@ -1,0 +1,61 @@
+.input {
+    --padding: 20px;
+    position: relative;
+    color: var(--text-color);
+
+    &__placeholder {
+        position: absolute;
+        inset: 50% var(--padding) auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        pointer-events: none;
+        transform: translateY(-50%) scale(1);
+        transition: all 200ms ease-in-out;
+        transform-origin: 0 0;
+
+        span {
+            color: var(--danger-color);
+        }
+
+        .input.error & {
+            color: var(--danger-color);
+        }
+    }
+
+    &.input.filled,
+    input:focus ~ {
+        .input__placeholder {
+            transform: translateY(-125%) scale(0.85);
+
+            @include media ('<sm-tablet') {
+                transform: translateY(-115%) scale(0.85);
+            }
+        }
+    }
+
+    &__control {
+        background-color: #fff;
+        border: none;
+        box-shadow: none;
+        border-radius: 6px;
+        width: 100%;
+        height: 60px;
+        padding: 18px var(--padding) 0;
+        outline: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        transition: box-shadow 200ms ease-in-out;
+
+        &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0, 0.30);
+        }
+
+        @include media ('<sm-tablet') {
+            height: 50px;
+        }
+    }
+}

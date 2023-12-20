@@ -1,0 +1,41 @@
+.window-popup {
+    position: fixed;
+    inset: 0;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    &.is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.is-animate {
+        pointer-events: all;
+    }
+
+    &__dismiss {
+        position: absolute;
+        z-index: 10;
+        top: 30px;
+        right: 30px;
+
+        @include media ('<sm-tablet') {
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    &__dialog {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 100%;
+        padding-top: 20vh;
+        padding-bottom: 40px;
+
+        @include media ('<sm-tablet') {
+            padding-top: 40px;
+        }
+    }
+}

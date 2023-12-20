@@ -1,0 +1,35 @@
+.button-popup {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 73px;
+    height: 73px;
+    background-image: linear-gradient(225deg, #0C5EED -52.44%, #292B33 94.43%);
+    border-radius: 50%;
+
+    &__img {
+        width: 68px;
+        position: absolute;
+        inset: -9px 12px 0 0;
+        animation-delay: 0s, 1s;
+        animation: taDa 2s 1s infinite;
+    }
+}
+
+@keyframes taDa {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

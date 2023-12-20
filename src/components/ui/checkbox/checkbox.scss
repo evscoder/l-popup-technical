@@ -1,0 +1,29 @@
+.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+
+    input {
+        pointer-events: none;
+    }
+
+    a {
+        color: #00ADFE;
+        text-decoration: underline;
+    }
+
+    .input-helper {
+        display: none;
+        grid-column: 2;
+    }
+
+    &.error .input-helper {
+        display: block;
+    }
+}

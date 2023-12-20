@@ -1,0 +1,7 @@
+mixin Input(data)
+    .input
+        input.input__control(
+            type=data.type
+            required=data.required
+        )&attributes(attributes)
+        .input__placeholder!=data.placeholder
