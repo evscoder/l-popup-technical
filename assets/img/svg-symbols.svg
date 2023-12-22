@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;" class="root-svg-symbols-element">
+    <symbol id="icon-clipboard-tick" viewBox="0 0 30 30">
+      
+<path d="M11.6378 18.3749L13.5128 20.2499L18.5128 15.2499" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.4999 7.49973H17.4999C19.9999 7.49973 19.9999 6.24973 19.9999 4.99973C19.9999 2.49973 18.7499 2.49973 17.4999 2.49973H12.4999C11.2499 2.49973 9.99992 2.49973 9.99992 4.99973C9.99992 7.49973 11.2499 7.49973 12.4999 7.49973Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 5.02441C24.1625 5.24941 26.25 6.78691 26.25 12.4994V19.9994C26.25 24.9994 25 27.4994 18.75 27.4994H11.25C5 27.4994 3.75 24.9994 3.75 19.9994V12.4994C3.75 6.79941 5.8375 5.24941 10 5.02441" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 20 20">
+      
+<rect x="2.125" y="0.807617" width="24" height="2" transform="rotate(45 2.125 0.807617)" fill="white"/>
+<rect x="19.2891" y="2.22183" width="24" height="2" transform="rotate(135 19.2891 2.22183)" fill="white"/>
+
+    </symbol>
+    <symbol id="icon-eye" viewBox="0 0 30 30">
+      
+<path d="M19.4749 15.0003C19.4749 17.4753 17.4749 19.4753 14.9999 19.4753C12.5249 19.4753 10.5249 17.4753 10.5249 15.0003C10.5249 12.5253 12.5249 10.5253 14.9999 10.5253C17.4749 10.5253 19.4749 12.5253 19.4749 15.0003Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 25.3371C19.4125 25.3371 23.525 22.7371 26.3875 18.2371C27.5125 16.4746 27.5125 13.5121 26.3875 11.7496C23.525 7.2496 19.4125 4.6496 15 4.6496C10.5875 4.6496 6.47502 7.2496 3.61252 11.7496C2.48752 13.5121 2.48752 16.4746 3.61252 18.2371C6.47502 22.7371 10.5875 25.3371 15 25.3371Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    </symbol>
+    <symbol id="icon-info" viewBox="0 0 34 34">
+      
+<rect x="2" y="2" width="30" height="30" rx="15" stroke="white" stroke-width="3"/>
+<path d="M17.75 24.5L17.75 15.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.75 15.5L17.75 15.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.75 11L17.75 9.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    </symbol>
+    <symbol id="icon-like" viewBox="0 0 30 30">
+      
+<path d="M9.35001 22.9381L13.225 25.9381C13.725 26.4381 14.85 26.6881 15.6 26.6881H20.35C21.85 26.6881 23.475 25.5631 23.85 24.0631L26.85 14.9381C27.475 13.1881 26.35 11.6881 24.475 11.6881H19.475C18.725 11.6881 18.1 11.0631 18.225 10.1881L18.85 6.18807C19.1 5.06307 18.35 3.81307 17.225 3.43807C16.225 3.06307 14.975 3.56307 14.475 4.31307L9.35001 11.9381" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M2.97493 22.9384V10.6884C2.97493 8.93842 3.72493 8.31342 5.47493 8.31342H6.72493C8.47493 8.31342 9.22493 8.93842 9.22493 10.6884V22.9384C9.22493 24.6884 8.47493 25.3134 6.72493 25.3134H5.47493C3.72493 25.3134 2.97493 24.6884 2.97493 22.9384Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    </symbol>
+</svg>

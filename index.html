@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+    <html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Awesome project</title>
+        <meta name="description" content="" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="" />
+        <meta name="apple-mobile-web-app-title" content="Awesome project" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" href="assets/css/vendor.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/content/favicons/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/content/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/content/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/content/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="assets/img/content/favicons/site.webmanifest" />
+        <link rel="mask-icon" href="assets/img/content/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="page-header"></header>
+            <main class="page-content">
+                <button class="button-popup" data-modal="#subscribePopup"><img class="button-popup__img" src="assets/img/content/Surprise.svg" /></button>
+                <div class="window-popup modal subscribe-popup" id="subscribePopup">
+                    <div class="window-popup__dialog">
+                        <button class="window-popup__dismiss" data-dismiss="modal">
+                            <svg class="icon-icon-close" width="24" height="24">
+                                <use xlink:href="assets/img/svg-symbols.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <div class="window-popup__content">
+                            <div class="subscribe-popup__fill"></div>
+                            <div class="subscribe-popup__scene">
+                                <div class="subscribe-popup__parallax" id="subscribeScene">
+                                    <div class="subscribe-popup__parallax-item" data-depth="0.6"></div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="subscribe-popup__content">
+                                    <div class="subscribe-popup__left">
+                                        <h1 class="subscribe-popup__title">Как начать процедуру банкротства без лишних заморочек?</h1>
+                                        <p class="subscribe-popup__text">Получите 2 подробные инструкции по банкротству через МФЦ и суд с чек-листам бесплатно, и у вас все получится! Введите свой телефона, и мы пришлем ссылку на загрузку документа.</p>
+                                        <ul class="subscribe-popup__features">
+                                            <li class="subscribe-popup__features-item">
+                                                <svg class="icon-icon-info" width="30" height="30">
+                                                    <use xlink:href="assets/img/svg-symbols.svg#icon-info"></use>
+                                                </svg>
+                                                <p>Удобно изучать на любом устройстве</p>
+                                            </li>
+                                            <li class="subscribe-popup__features-item">
+                                                <svg class="icon-icon-clipboard-tick" width="30" height="30">
+                                                    <use xlink:href="assets/img/svg-symbols.svg#icon-clipboard-tick"></use>
+                                                </svg>
+                                                <p>Вы ничего не забудете: важные моменты в чек-листе</p>
+                                            </li>
+                                            <li class="subscribe-popup__features-item">
+                                                <svg class="icon-icon-eye" width="30" height="30">
+                                                    <use xlink:href="assets/img/svg-symbols.svg#icon-eye"></use>
+                                                </svg>
+                                                <p>Всегда перед глазами: распечатайте и повесьте на стену</p>
+                                            </li>
+                                            <li class="subscribe-popup__features-item">
+                                                <svg class="icon-icon-like" width="30" height="30">
+                                                    <use xlink:href="assets/img/svg-symbols.svg#icon-like"></use>
+                                                </svg>
+                                                <p>Упростит вам жизнь: не придется изучать статьи и законы</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form class="subscribe-popup__form js-subscribe-form" method="POST">
+                                        <div class="form-group subscribe-popup__input">
+                                            <div class="input">
+                                                <input class="input__control js-input" type="text" />
+                                                <div class="input__placeholder">Ваше имя <span>*</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group subscribe-popup__input">
+                                            <div class="input">
+                                                <input class="input__control js-input js-input-phone" type="text" />
+                                                <div class="input__placeholder">Номер телефона <span>*</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox subscribe-popup__agree">
+                                            <input class="checkbox__input" type="checkbox" id="agree" name="subscribe_agree" checked="checked" />
+                                            <label class="checkbox__label">Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>.
+                                            </label><span class="input-helper">Это обязательное поле.</span>
+                                        </div>
+                                        <button class="button button--undefined subscribe-popup__submit-btn" type="submit">Получить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-message js-subscribe-popup-success">
+                    <div class="popup-message__content">Ваше сообщение отправлено!
+                    </div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+        <script src="assets/js/vendor.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+    </html>
