@@ -1,4 +1,4 @@
-## Модальное окно с формой. [Посмотреть проект](https://evscoder.github.io/www/l-popup-technical/)
+## Модальное окно с формой. [Посмотреть проект](https://evscoder.github.io/l-popup-technical/)
 
 ## Requirements
 * Node >= 16.15.1 or latest version
